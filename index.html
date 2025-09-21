@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevHelp Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DevHelp Dashboard 🚀</h1>
+    </header>
+    <main class="dashboard-grid">
+        <div class="widget" id="github-widget">
+            <h2>GitHub Repo Finder</h2>
+            <div class="input-group">
+                <input type="text" id="github-search-input" placeholder="e.g., python games">
+                <button id="github-search-btn">Search</button>
+            </div>
+            <div id="github-results"></div>
+        </div>
+
+        <div class="widget" id="news-widget">
+            <h2>Latest Tech News</h2>
+            <div id="news-results">
+                <p>Loading news...</p>
+            </div>
+        </div>
+
+        <div class="widget" id="joke-widget">
+            <h2>Programming Joke of the Day</h2>
+            <div id="joke-results">
+                <p>Fetching a joke...</p>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
